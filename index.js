@@ -42,6 +42,7 @@ function counterMaker() {
   let count = 0;
   return function counter() {
    return count++;
+
   }
 }
 
@@ -64,9 +65,14 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+  return Math.floor(Math.random() * 3);
 }
+
+let score = inning();
+console.log(score);
+  
+
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
